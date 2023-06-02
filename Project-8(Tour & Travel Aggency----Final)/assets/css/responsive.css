@@ -1,0 +1,214 @@
+/* Medium Layout: 1200px. 
+
+Checking Size: 1000px
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .container{
+        width: 970px;
+    }
+    .bannar-area {      
+        height: 50vh;
+      
+    }
+    .bannar h1 {
+        font-size: 40px;
+        padding-bottom: 50px;
+    }
+    .bannar span, .about-info span {
+        font-size: 22px;
+    }
+    .about-info {
+        flex-basis: 50%;
+    }
+    .about-info h1 {
+        font-size: 40px;
+        line-height: 52px;      
+    }
+    .single-footer li {
+        font-size: 16px;
+    }
+  }
+    /* Tablet Layout: 1200px. 
+
+  Checking Size: 800px
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 750px;
+    }
+    .logo a {
+        font-size: 20px;
+    }
+    .menu ul li a {
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 13px; 
+        padding: 8px 10px;
+    }
+    .bannar-area {
+        height: 45vh;
+        margin-top: 10px;
+    }      
+    .bannar h1 {
+        font-size: 30px;
+        line-height: 50px;
+        padding-bottom: 30px;
+        padding-top: 0;     
+    }
+    .bannar span, .about-info span {
+        font-size: 20px;
+      line-height: 80px;
+    }
+    .about-info h1 {
+        font-size: 35px;
+        line-height: 53px;    
+    }
+    .single-img {
+        flex-basis: 22%;
+        margin: 11px 16px 0 6px;
+    }
+    .about-info {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .about-info p {
+        margin-bottom: 15px;
+    }
+    .about-img {
+        flex-basis: 100%;
+    }
+    .detination-content { 
+        padding: 4px 10px;  
+    }
+    .detination-content h4 {
+        font-size: 16px;
+    }
+    .detination-content h4 span {
+        font-size: 12px;
+    }
+    .detination-content a {     
+        font-size: 30px;
+       
+    }
+    .single-footer h2 {
+        font-size: 22px;
+    }
+    .single-footer p { 
+        margin: 12px 0px;
+        line-height: 23px;
+    }
+    .single-footer h4 {
+        font-size: 16px;     
+    }
+    .single-footer li {
+        font-size: 12px;
+    }
+    .single-blog h4 {
+        font-size: 18px; 
+    }
+    .single-blog {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .single-package h4 {  
+        font-size: 15px;
+    }
+    .package-meta span {
+        font-size: 13px;
+    }
+    .single-package a { 
+        font-size: 12px;
+    }
+}
+/* Mobile Layout: 350px
+
+Checking Size: 400px
+*/
+@media only screen and (max-width: 767px){
+    .container{
+        width: 350px;  
+    }
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-social {
+        margin-top: 10px;
+    }.logo a {
+        font-size: 38px;;
+        padding: 0px 80px;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .btn {
+        padding: 10px 10px;
+    }
+    .menu ul li { 
+        margin: 6px;
+    }
+    .bannar-area {
+        height: 30vh;
+    }
+    .bannar h1 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .bannar span, .about-info span {
+        font-size: 15px;
+        
+    }
+    .about-info {
+        padding: 12px;
+    }
+    .about-info h1 {
+        font-size: 30px;
+    
+    }
+    .about-info p {
+        font-size: 14px;
+    }
+
+    .single-img {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .about-img {
+        margin-top: 30px;
+    }
+    .single-destination {
+        flex-basis: 100%;
+    }
+    .single-package {
+	flex-basis: 100%;
+    }
+    .single-guide {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .section-title h4 {
+     font-size: 20px;
+    
+    }
+    .single-blog {
+        flex-basis: 100%;
+    
+    }
+    .single-footer:nth-child(1) {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .single-footer {
+        flex-basis: 100%;
+        padding: 20px;
+    }.single-footer:nth-child(4) {
+        flex-basis: 100%;
+    }
+}
+

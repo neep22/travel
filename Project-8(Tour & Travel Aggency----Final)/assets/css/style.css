@@ -1,0 +1,597 @@
+/*
+Index
+-------
+
+01. Reset CSS
+02. Header Area
+03. Banner Area
+04. About Area
+05. Destinations Area
+06. Guides Area
+07. Blogs Area
+08. Contact Area
+09. Footer Area
+*/
+
+/* Reset Area CSS Start*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+body{
+    font-family: 'Lexend', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.pt-80{
+    padding-top: 80px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* Reset Area CSS End*/
+
+/* Header Area CSS Start */
+
+.header-top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 8px 0;
+    align-items: center;
+}
+
+.header-left a {
+    color: black;
+    margin-right: 13px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.header-left a i {
+    width: 25px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.header-social a {
+    margin-left: 9px;
+}
+.header-social a i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    transition: .3s;
+}
+.header-social a i:hover{
+    color: #53a353;
+}
+.section {
+    border: 1px solid #575757;
+    width: 100%;
+    margin-top: 3px;
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+.menu ul li {
+    margin-left: 30px;
+}
+.menu ul li a{
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s;
+}
+.menu ul li a:hover{
+    color: #53a353;
+}
+
+.btn{
+    font-size: 16px;
+    border: 2px solid transparent;
+    background-color: #53a353;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .7s;
+}
+.btn:hover{
+    border-color: #53a353;
+    background-color: white;
+    color:black;
+}
+/* Header Area CSS End */
+
+/* Bannar Area CSS Start */
+.bannar-area{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    margin-top: 20px;
+}
+.bannar-area::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    opacity: .7;
+    background-color: rgb(39, 39, 39);   
+}
+.bannar{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.bannar span, .about-info span{
+    font-size: 25px;
+    padding-bottom:20px ;
+    text-transform: capitalize;
+}
+.bannar h1{
+    font-size: 50px;
+    line-height:80px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+/* Bannar Area CSS End */
+
+/* About Area CSS Start*/
+
+.about{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+.about-info {
+    flex-basis: 635px;
+}
+.about-info span{
+    font-size: 22px;
+}
+.about-info h1 {
+    font-size: 50px;
+    line-height: 58px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.about-info p {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: inherit;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+.about-img{
+    flex-basis: 470px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.single-img {
+    flex-basis: 215px;
+    margin: 10px 10px 0 6px;
+}
+.single-img img{
+    width: 100%;
+   
+}
+/* About Area CSS End*/
+
+/* Destination Area CSS Start*/
+
+.destinations-area {
+    padding: 100px 0px;
+    background-color: #333;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .section-title p {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  .section-title h4 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 60px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+  }
+  .section-title h4:after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #53a353;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  .destinations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .single-destination {
+    flex-basis: 32%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .single-destination img {
+    width: 100%;
+    vertical-align: middle;
+   
+  }
+  .single-destination span i {
+	margin-right: 8px;
+}
+  .detination-content {
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    background-color: #53a353;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .detination-content h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: left;
+  }
+  .detination-content h4 span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+.detination-content a {
+    color: #fff;
+    font-size: 50px;
+    transition: .5s;
+  }
+  .detination-content a:hover {
+    color: #333;
+    
+  }
+  .destinations-area .section-title {
+    color: #fff;
+  }
+/* Destination Area CSS End*/
+
+/* Packages Area CSS Start*/
+
+.package-area {
+    padding: 100px 0;
+  }
+
+.packages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+.single-package {
+    flex-basis: 32%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .single-package h4 {
+    text-align: center;
+    font-size: 22px;
+    margin: 15px 0;
+    text-transform: capitalize;
+  }
+  .package-meta {
+    border-bottom: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+  }
+  .package-meta span i {
+    margin-right: 5px;
+  }
+
+  
+.single-package a {
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #53a353;
+    font-size: 15px;
+    font-weight: 700;
+    transition: .5s;
+  }
+  .single-package a:hover{
+    color: black;
+  }
+/* Packages Area CSS End*/
+
+
+ /* Guides Area CSS Start */
+
+.guides-area {
+  padding: 100px 0;
+  background-color: #333;
+}
+.guides-area .section-title {
+  color: #fff;
+}
+.guides {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.single-guide {
+  flex-basis: 24%;
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;
+}
+.single-guide img {
+  width: 100%;
+}
+.single-guide h4 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.single-guide h4 span {
+	display: block;
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 5px;
+}
+ /* Guides Area CSS End */
+
+ /*Blog Area CSS Start*/
+.blog-area {
+    padding: 100px 0;
+    background-color: #ddd;
+  }
+  
+.blog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .single-blog {
+    flex-basis: 32%;
+    background-color: #fff;
+    padding: 15px;
+  }
+  .single-blog img {
+    width: 100%;
+  }
+  
+.blog-img {
+    position: relative;
+  }
+  .blog-img span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #53a353;
+    padding: 8px 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+
+
+.blog-meta {
+    text-align: center;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  .blog-meta a {
+    color: #333 !important;
+    margin: 0 10px;
+  }
+  .blog-meta i {
+	margin-right: 6px;
+}
+  
+  .single-blog h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  
+  .single-blog p {
+    margin: 10px 0;
+ 
+    text-transform: capitalize;
+    line-height: 25px;
+  }
+  
+  .single-blog a {
+    text-transform: capitalize;
+    color: #53a353;
+    transition: .5s;
+  }
+  .single-blog a:hover{
+    color: black;
+    background-color: #53a353;
+    padding: 10px 20px;
+  }
+  /*Blog Area CSS End*/
+  
+  /*Footer Area CSS Start*/
+.footer-area {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+    z-index: 2;
+  }
+  .footer-area:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    opacity: .9;
+    z-index: -1;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+ 
+  .single-footer:nth-child(1) {
+    flex-basis: 30%;
+  }
+  .single-footer:nth-child(4) {
+    flex-basis: 30%;
+  }
+  .single-footer h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 700;
+  }
+  .single-footer p {
+	text-align: center;
+	margin: 20px 0px;
+	text-transform: capitalize;
+	line-height: 25px;
+}
+  .footer-social {
+    text-align: center;
+  }
+  
+.footer-social a {
+    color: #fff;
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: .5s;
+  }
+  .footer-social a:hover{
+    background-color:#ddd;
+    color:#333;
+}
+  .single-footer h4 {
+    text-transform: capitalize;
+    font-size: 22px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .single-footer h4:after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #53a353;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+
+.single-footer li {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .single-footer ul li i {
+	margin-right: 6px;
+}
+  
+  .single-footer li:hover {
+    color: #53a353;
+  }
+  .copy {
+	text-align: center;
+	background-color: #333;
+	margin-top: 35px;
+	border-radius: 10px;
+	padding: 10px;
+	text-transform: capitalize;
+}
+/*Footer Area CSS End*/
